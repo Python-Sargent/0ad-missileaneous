@@ -1,0 +1,7 @@
+{
+    "name": "missileaneous",
+    "version": "0.1",
+    "label": "Missileaneous",
+    "description": "Adds Missileer troops with long range and heavy damage to the gaul civilization.",
+    "dependencies": ["0ad>0.0.20"]
+}

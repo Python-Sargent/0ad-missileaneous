@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_cavalry_ranged_javelineer">
+	<Attack>
+    <Ranged>
+      <AttackName>Missile</AttackName>
+      <Damage>
+        <Pierce>250</Pierce>
+        <Crush>350</Crush>
+      </Damage>
+      <MaxRange>200</MaxRange>
+      <PrepareTime>1500</PrepareTime>
+      <RepeatTime>1000</RepeatTime>
+      <Projectile>
+        <Speed>200</Speed>
+        <Spread>4</Spread>
+        <Gravity>98</Gravity>
+        <FriendlyFire>false</FriendlyFire>
+        <LaunchPoint y="5"/>
+      </Projectile>
+      <PreferredClasses datatype="tokens">Human</PreferredClasses>
+    </Ranged>
+  </Attack>
+  <Vision>
+    <Range>200</Range>
+  </Vision>
+  <Identity>
+    <Civ>brit</Civ>
+    <SelectionGroupName>units/brit/cavalry_missileer</SelectionGroupName>
+    <SpecificName>Cavalry Missileer</SpecificName>
+    <GenericName>Cavalry Missileer</GenericName>
+    <Icon>units/brit_cavalry_javelinist.png</Icon>
+  </Identity>
+  <Promotion>
+    <Entity>units/brit/cavalry_missileer</Entity>
+  </Promotion>
+  <VisualActor>
+    <Actor>units/britons/cavalry_javelinist_b_m.xml</Actor>
+  </VisualActor>
+</Entity>

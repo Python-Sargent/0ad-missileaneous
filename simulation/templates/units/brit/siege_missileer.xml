@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Entity parent="template_unit_siege_boltshooter">
+  <Attack>
+    <Ranged>
+      <AttackName>Missile</AttackName>
+      <Damage>
+        <Pierce>250</Pierce>
+        <Crush>350</Crush>
+      </Damage>
+      <MaxRange>200</MaxRange>
+      <PrepareTime>1500</PrepareTime>
+      <RepeatTime>1000</RepeatTime>
+      <Projectile>
+        <Speed>200</Speed>
+        <Spread>4</Spread>
+        <Gravity>98</Gravity>
+        <FriendlyFire>true</FriendlyFire>
+        <LaunchPoint y="5"/>
+      </Projectile>
+      <PreferredClasses datatype="tokens">Human</PreferredClasses>
+      <Splash>
+        <Shape>Linear</Shape>
+        <Range>9</Range>
+        <FriendlyFire>false</FriendlyFire>
+        <Damage>
+          <Pierce>150</Pierce>
+        	<Crush>250</Crush>
+        </Damage>
+      </Splash>
+    </Ranged>
+  </Attack>
+  <Identity>
+    <Civ>brit</Civ>
+    <SelectionGroupName>units/brit/siege_missileer</SelectionGroupName>
+    <SpecificName>Siege Missileer</SpecificName>
+    <GenericName>Siege Missileer</GenericName>
+    <Icon>units/athen_siege_lithobolos.png</Icon>
+  </Identity>
+  <VisualActor>
+    <Actor>units/athenians/siege_spear_pivot.xml</Actor>
+  </VisualActor>
+  <Vision>
+    <Range>200</Range>
+  </Vision>
+</Entity>
